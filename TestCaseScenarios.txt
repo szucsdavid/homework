@@ -1,0 +1,24 @@
+Test case scenarios for Trader.java
+
+Scenario 1:
+			Test a happy path where all the input data are valid and the TradeOrders are all over 1000$ and Cash balance doesn't go into negative.
+Scenario 2:
+			TradeOrders are all over 1000$ but the Cash balance theoretically could go into Negative (maybe due to rounding)
+Scenario 3:
+			Some of the TradeOrders are below the 1000$ threshold
+Scenario 3b:
+			Some of the TradeOrders are below the 1000$ threshold - Check if the weights are recalculated and the positions are rebalanced to get closer to the expedted weights - need to design test data for this scenario
+Scenario 4:
+			One or more Stock prices are set to 0
+Scenario 5: 
+			Expected Weights are less than 1.0
+Scenario 6:
+			Some stocks have low quantity in the current positions
+Scenario 7:
+			Test with invalid price type - int instead of double
+Scenario 8:
+			Test with invalid expedted weights type - int instead of double
+Scenario 9:
+			Test with invalid current position quantity - double instead of int
+Scenario 10:
+			Current position is an empty list
